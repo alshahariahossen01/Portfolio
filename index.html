@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio<span class="dot">.</span></div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, I'm <span class="purple">Al Shaharia Hossen</span>
+                <div class="highlight"> I'm a Passionate </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://bio.link/alshahariahossen01" target="_blank" class="btn-link">
+                        <button class="btn">Resume</button>
+                    </a>
+                    <a href="https://github.com/alshahariahossen01" target="_blank" class="btn-link">
+                        <button class="btn">Github</button>
+                    </a>
+                    <a href="https://wa.me/qr/FOT4YVZ5AAPPB1" target="_blank" class="btn-link">
+                        <button class="btn">Contact</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="k.png" alt="Profile picture of Al Shaharia Hossen">
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <h1>Experiences</h1>
+            <!-- Add content about your work experiences here -->
+        </section>
+        <section class="secondSection">
+            <h1 id="about">About Me</h1>
+            <p>
+                I'm Al Shaharia Hossen, a dedicated and passionate professional with expertise in programming, software
+                engineering, and security analysis. With a background in developing innovative solutions, I am committed
+                to leveraging my skills to contribute to meaningful projects and create impactful work.
+            </p>
+        </section>
+        <section class="secondSection">
+            <h1 id="projects">Projects</h1>
+            <div class="portfolio-item">
+                <img src="projectsshort1.png" alt="Project Screenshot" class="project-thumbnail"
+                    onclick="openModal('project-modal-1')">
+            </div>
+            <!-- Modal Structure -->
+            <div id="project-modal-1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('project-modal-1')">&times;</span>
+                    <h1>Personal Profile</h1>
+                    <p><strong>Description:</strong> I create here small profile page here you can add your all social
+                        media acount</p>
+                    <img src="projects1.png" alt="Full Project Screenshot">
+                    <p><strong>Role:</strong> Devloper and Designer.</p>
+                    <p><strong>Technologies Used:</strong> HTML,CSS,JavaScript VScode.</p>
+                    <p><strong>Challenges and Solutions:</strong>This is my fast project so it's deficalt for me when
+                        i have fasing problem i got socia solutions from google and online Platforms</p>
+                    <p><strong>Testimonials:</strong> I was host this project and share with my friends.</p>
+                    <a href="live-project-link">https://socialbiolink.000webhostapp.com/</a>
+                    <a href="github-repo-link">https://github.com/alshahariahossen01/Personal-Profile/</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="secondSection" id="careers">
+            <h1>Careers</h1>
+            <div class="career-content">
+                <img src="my-photo.png" alt="Photo of Al Shaharia Hossen" class="career-photo">
+                <div class="career-text">
+                    <p>
+                        Al Shaharia Hossen is a multi-talented individual based in Bangladesh, born on November 28. His
+                        diverse
+                        skill set spans across various domains, including Software Engineering, Cybersecurity Malware
+                        Analyst,
+                        Security Analyst, System Analyst, and Music.
+                    </p>
+                    <p>
+                        <strong>Computer Science Engineer:</strong> Alongside his music career, Al Shaharia Hossen is
+                        proficient
+                        in computer science engineering (CSE). He excels in designing visually appealing websites and
+                        programming languages, providing engaging online experiences for various clients.
+                    </p>
+                    <p>
+                        <strong>Cybersecurity Specialist:</strong> Al Shaharia Hossen is deeply involved in
+                        cybersecurity, with
+                        expertise in digital security practices. He focuses on safeguarding sensitive information and
+                        preventing
+                        cyber threats, making him a trusted authority in the field.
+                    </p>
+                    <p>
+                        <strong>Music Career:</strong> Al Shaharia Hossen is a singer and songwriter known for his
+                        melodious
+                        voice and heartfelt compositions. He has released popular tracks like "Scorpion K632," "Marvo,"
+                        and
+                        "Touch Wisdom," gaining a global following.
+                    </p>
+                    <p>
+                        <strong>Entrepreneurship:</strong> He serves as the CEO of ASHM and Co-Founder of Elevatfy &
+                        Secure-IT.
+                        His leadership has established these companies as reputable providers of music, web development,
+                        and
+                        cybersecurity solutions.
+                    </p>
+                    <p>
+                        Al Shaharia Hossen's diverse talents and entrepreneurial ventures reflect his passion for
+                        technology,
+                        music, and security, contributing significantly to various industries both locally and globally.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="secondSection" id="skills">
+            <h1>Skills and Expertise</h1>
+            <h2>
+                <p>Programming Languages:</p>
+            </h2>
+            <div class="skills-container">
+                <!-- Programming Languages -->
+                <div class="skill">
+                    <img src="c-logo.png" alt="C Logo">
+                    <span>C</span>
+                </div>
+                <div class="skill">
+                    <img src="cpp-logo.png" alt="C++ Logo">
+                    <span>C++</span>
+                </div>
+                <div class="skill">
+                    <img src="python-logo.png" alt="Python Logo">
+                    <span>Python</span>
+                </div>
+                <div class="skill">
+                    <img src="html-logo.png" alt="Html Logo">
+                    <span>HTML</span>
+                </div>
+                <div class="skill">
+                    <img src="css-logo.png" alt="Css Logo">
+                    <span>CSS</span>
+                </div>
+            </div>
+
+            <!-- New Categories -->
+            <h2>
+                <p>Frameworks and Libraries:</p>
+            </h2>
+            <div class="skills-container frameworks">
+                <div class="skill">
+                    <img src="Laravel.png" alt="Laravel Logo">
+                    <span>Laravel</span>
+                </div>
+                <div class="skill">
+                    <img src="Bootstrap_logo.png" alt="Bootstrap Logo">
+                    <span>Bootstrap</span>
+                </div>
+                <div class="skill">
+                    <img src="React_Logo.png" alt="React Logo">
+                    <span>React</span>
+                </div>
+                <div class="skill">
+                    <img src="Angular.png" alt="Angular Logo">
+                    <span>Angular</span>
+                </div>
+                <div class="skill">
+                    <img src="Angular js.png" alt="Angular JS Logo">
+                    <span>Angular JS</span>
+                </div>
+                <div class="skill">
+                    <img src="node js.png" alt="Node.js Logo">
+                    <span>Node.js</span>
+                </div>
+                <div class="skill">
+                    <img src="django.png" alt="Django Logo">
+                    <span>Django</span>
+                </div>
+                <div class="skill">
+                    <img src="nextjs-icon.png" alt="Nextjs Logo">
+                    <span>Next JS</span>
+                </div>
+            </div>
+
+
+            <h2>
+                <p>Tools and Platforms:</p>
+            </h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="git.png" alt="Git Logo">
+                    <span>Git</span>
+                </div>
+                <div class="skill">
+                    <img src="Docker.png" alt="Docker Logo">
+                    <span>Docker</span>
+                </div>
+                <div class="skill">
+                    <img src="aws.png" alt="AWS Logo">
+                    <span>AWS</span>
+                </div>
+            </div>
+
+            <h2>
+                <p>Others:</p>
+            </h2>
+
+            <div class="skill">
+                <div class="skills-container">
+                    <div class="skills-list">
+                        <div class="skill-item">Agile Methodologies</div>
+                        <div class="skill-item">REST APIs</div>
+                        <div class="skill-item">Microservices</div>
+                        <div class="skill-item">Unit Testing</div>
+                    </div>
+                </div>
+        </section>
+        
+        <section class="secondSectionServices">
+            <h2>Services</h2>
+            <div class="services">
+                <div class="services-container">
+                    <div class="services-list">
+                        <div class="service-name">Software Development</div>
+                        <div class="service-name">Web Development</div>
+                        <div class="service-name">Digital Marketing</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-title">
+                Al Shaharia Hossen's Portfolio
+                <p>If you'd like to discuss a project or just want to say hi, feel free to reach out!</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#careers">Careers</a></li> <!-- Updated link to scroll to #careers -->
+                </ul>
+                <ul>
+                    <li><a href="/">Blog</a></li>
+                    <li><a href="/">Resources</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/alshahariahossen01/">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/alshahariahossen01">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/shaharia_munna">
+                <img src="x-icon.png" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/alshahariahossen01">
+                <img src="github-icon.png" alt="Github">
+            </a>
+        </div>
+        <div class="footer-rights">
+            © 2024 Al Shaharia Hossen. All rights reserved.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Programmer.', 'Computer Enineer', 'Software Engineer', 'Information Analyst', 'Security Analyst', 'Malware Analyst'],
+            typeSpeed: 80,
+            loop: true
+        });
+
+        // Apply the animation to the #element
+        var element = document.getElementById('element');
+        element.style.animation = "colorTransition 10s infinite linear";
+    </script>
+
+    <script>
+        // JavaScript for modal functionality
+
+        // Function to open modal
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        // Function to close modal
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        // Close the modal if user clicks outside of it
+        window.onclick = function (event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = "none";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
+

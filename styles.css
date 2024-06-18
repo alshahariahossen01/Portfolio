@@ -1,0 +1,831 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(6, 6, 28);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(3, 3, 44);
+    padding: 0 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 244);
+    font-size: 1.02rem;
+}
+
+.left {
+    font-size: 1.5rem;
+    margin-left: 0px;
+}
+
+.left .dot {
+    font-weight: bold;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin: 80px 0;
+    padding: 20px 50px;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+    max-width: 45%;
+    padding: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.leftSection .highlight {
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 10px;
+}
+
+.leftSection .buttons {
+    padding: 50px 0;
+}
+
+.rightSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 45%;
+}
+
+.rightSection img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.purple {
+    color: rgb(138, 43, 226);
+}
+
+.text-gray {
+    color: grey;
+    font-size: 1.2rem;
+}
+
+#element {
+    /* Add the animation to #element */
+    animation: colorTransition 10s infinite linear;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: 90px auto;
+    text-align: left;
+}
+
+.secondSection h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: white;
+}
+
+.secondSection p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: rgb(12, 12, 17);
+    padding: 30px 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-title {
+    flex: 1;
+    text-align: left;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: rgb(153, 153, 244);
+    transform: translateX(5px);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.footer-rights {
+    text-align: center;
+    color: grey;
+    padding: 12px 0;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1), rgba(255, 255, 0, 1), rgba(0, 255, 0, 1), rgba(0, 255, 255, 1), rgba(0, 0, 255, 1), rgba(255, 0, 255, 1), rgba(255, 0, 0, 1));
+    background-size: 600% 600%;
+    animation: gradient-animation 10s infinite linear;
+    z-index: -1;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover::before {
+    opacity: 1;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-link {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Keyframe animation for the text color transition */
+@keyframes colorTransition {
+    0% {
+        color: rgb(22, 242, 29);
+        /* Start with a green color */
+    }
+
+    10% {
+        color: rgb(255, 0, 0);
+        /* Red */
+    }
+
+    20% {
+        color: rgb(255, 127, 80);
+        /* Coral */
+    }
+
+    30% {
+        color: rgb(255, 255, 0);
+        /* Yellow */
+    }
+
+    40% {
+        color: rgb(0, 255, 0);
+        /* Lime Green */
+    }
+
+    50% {
+        color: rgb(0, 255, 255);
+        /* Cyan */
+    }
+
+    60% {
+        color: rgb(0, 0, 255);
+        /* Blue */
+    }
+
+    70% {
+        color: rgb(138, 43, 226);
+        /* Blue Violet */
+    }
+
+    80% {
+        color: rgb(75, 0, 130);
+        /* Indigo */
+    }
+
+    90% {
+        color: rgb(238, 130, 238);
+        /* Violet */
+    }
+
+    100% {
+        color: rgb(22, 242, 29);
+        /* Back to green */
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+    .firstSection {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .leftSection,
+    .rightSection {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .leftSection {
+        margin-bottom: 50px;
+    }
+
+    .rightSection img {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .footer-links ul {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .left {
+        font-size: 1.2rem;
+    }
+
+    .leftSection,
+    .rightSection {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Specific styles for the Careers section */
+.secondSection#careers {
+    font-size: 0.1rem;
+    /* Smaller font size */
+    line-height: 0.5;
+    /* Line height for better readability */
+    color: #cccccc;
+    /* Slightly lighter color for the text */
+    margin: 50px auto;
+    /* Top and bottom margin for better spacing */
+    max-width: 80vw;
+    /* Consistent width with other sections */
+}
+
+/* Specific paragraph styling within the Careers section */
+.secondSection#careers .career-text {
+    margin-bottom: 10px;
+    /* Spacing between paragraphs */
+}
+
+.secondSection#careers strong {
+    color: #f8243d;
+    /* Highlight strong text with white color */
+}
+
+.secondSection#careers h1 {
+    font-size: 1.8rem;
+    /* Slightly larger heading */
+    color: #e69122;
+    /* Ensure heading stands out */
+}
+
+/* CSS for the Careers section */
+.career-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* Default to column for small screens */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.career-photo {
+    max-width: 150px;
+    /* Adjust the size as needed */
+    border-radius: 50%;
+    /* Makes the photo a circle */
+    margin-bottom: 20px;
+    /* Space below the photo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+}
+
+/* Media Queries for larger screens */
+@media screen and (min-width: 768px) {
+    .career-content {
+        flex-direction: row;
+        /* Align photo and text side by side on larger screens */
+        text-align: left;
+    }
+
+    .career-photo {
+        margin-right: 20px;
+        /* Space between photo and text */
+        margin-bottom: 0;
+        /* Remove bottom margin on larger screens */
+    }
+}
+
+.secondSection#skills h1 {
+    font-size: 1.8rem;
+    /* Slightly larger heading */
+    color: #e69122;
+    /* Ensure heading stands out */
+}
+
+/* Section headings */
+.secondSection h2 p {
+    margin: 20px 0 10px;
+    /* Adjust spacing for headings */
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* Styles for skills with dot */
+.skills-category h2 .dot {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.skill {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 85px;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+@keyframes rgbAnimation {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    animation: rgbAnimation 10s linear infinite;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    /* Space between each skill item */
+}
+
+.skills-list .skill-item {
+    font-size: 1.5rem;
+    /* Adjust the font size as needed */
+    color: #ffffff;
+    /* White color for text */
+    position: relative;
+    /* To position the dot */
+    padding-left: 200px;
+    /* Space for the dot */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+}
+
+.skills-list .skill-item::before {
+    content: "•";
+    /* Unicode character for the dot */
+    position: absolute;
+    left: 0;
+    padding-left: 150px;
+    /* Position the dot to the left of the text */
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(153, 153, 244);
+    /* Color for the dot */
+    font-size: 1.5rem;
+    /* Adjust the size of the dot */
+    font-weight: bold;
+}
+
+/* Specific styling for the Frameworks and Libraries section */
+.skills-container.frameworks {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 70px;
+    padding: 120px;
+    /* Adjust the spacing between icons as needed */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .skills-container.frameworks {
+        grid-template-columns: repeat(3, 1fr);
+        /* Display 3 icons per row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills-container.frameworks {
+        grid-template-columns: repeat(2, 1fr);
+        /* Display 2 icons per row on extra small screens */
+    }
+}
+
+/* Global styles for the modal and overlay */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.portfolio-item {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    /* Needed for hover animation */
+}
+
+/* Style for the square thumbnail with RGB border effect */
+.project-thumbnail {
+    width: 250px;
+    /* Thumbnail size */
+    height: 250px;
+    /* Make it square */
+    border-radius: 10%;
+    /* Slightly rounded corners */
+    border: 2px solid;
+    /* Border size */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    /* Optional shadow for better visibility */
+    animation: rgbBorder 3s infinite;
+    /* Infinite RGB color animation */
+    transition: transform 0.3s;
+    /* Smooth hover effect */
+}
+
+/* Hover animation */
+.project-thumbnail:hover {
+    transform: scale(1.1);
+    /* Slight zoom-in effect */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+/* Keyframes for the infinite RGB color animation */
+@keyframes rgbBorder {
+    0% {
+        border-color: red;
+    }
+
+    33% {
+        border-color: green;
+    }
+
+    66% {
+        border-color: blue;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 80%;
+    /* Full width */
+    height: 80%;
+    /* Full height */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black background with higher opacity */
+}
+
+/* Modal Content without background */
+.modal-content.no-background {
+    position: relative;
+    margin: 5% auto;
+    /* Centered horizontally */
+    padding: 0;
+    /* Remove padding */
+    width: 80%;
+    /* Adjust width as needed */
+    max-width: 800px;
+    /* Maximum width */
+    background-color: transparent;
+    /* No background color */
+    border-radius: 0;
+    /* Remove border radius */
+    box-shadow: none;
+    /* Remove shadow */
+    text-align: center;
+    /* Center align text */
+    overflow: hidden;
+    /* Hide overflow */
+}
+
+/* Full image inside modal */
+.full-image {
+    display: block;
+    margin: 0 auto;
+    /* Centered image */
+    max-width: 100%;
+    /* Responsive sizing */
+    width: 50%;
+    /* Medium size */
+    height: auto;
+    /* Maintain aspect ratio */
+    cursor: pointer;
+    /* Pointer cursor on click */
+}
+
+/* Project details styling with scrollable section */
+.project-details.scrollable {
+    max-height: 60vh;
+    /* Set a maximum height to enable scrolling */
+    overflow-y: auto;
+    /* Enable vertical scrolling if content exceeds height */
+    padding: 20px;
+    text-align: left;
+    /* Align text to the left */
+    margin-top: 20px;
+    /* Space between image and text */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Light background for readability */
+    border-radius: 10px;
+    /* Slightly rounded corners */
+}
+
+.project-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    margin: 10px 0;
+}
+
+.project-details a {
+    display: inline-block;
+    margin: 10px 5px;
+    color: #0066cc;
+    /* Link color */
+    text-decoration: none;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+    /* White close button for visibility on dark background */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    /* Pointer cursor for close button */
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    /* Slightly darker on hover */
+    text-decoration: none;
+}
+
+/* Scrollbar customization (optional) */
+.project-details.scrollable::-webkit-scrollbar {
+    width: 10px;
+}
+
+.project-details.scrollable::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.project-details.scrollable::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Style the main section */
+.secondSectionServices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align the heading to the left */
+    padding: 20px;
+    margin: 120px;
+}
+
+/* Style the heading to align it to the left */
+.secondSectionServices h2 {
+    margin: 20px 0 10px;
+    /* Adjust spacing for headings */
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+/* Center the services container within the section */
+.services-container {
+    display: flex;
+    justify-content: center;
+    /* Center the container horizontally */
+    width: 100%;
+    /* Full width to allow centering */
+}
+
+/* Align the services list items to the left */
+.services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align items to the start (left) */
+    text-align: left;
+    padding: 0;
+    margin: 10px;
+}
+
+/* Style each service name */
+.service-name {
+    position: relative;
+    /* Allow positioning of the dot */
+    margin: 10px 0;
+    /* Add space between services */
+    padding-left: 170px;
+    /* Space for the dot */
+    font-size: 1.3em;
+    /* Adjust font size as needed */
+}
+
+/* Add the bold dot before each service name */
+.service-name::before {
+    content: '•';
+    /* Unicode character for a bullet point */
+    position: absolute;
+    left: 130px;
+    /* Position the dot on the left */
+    font-weight: bold;
+    /* Make the dot bold */
+    color: rgb(24, 235, 70);
+    /* Color of the dot */
+    font-size: 1em;
+    /* Match the font size of the text */
+}
+
+/* Optional: Center the container while keeping the services list aligned to the left */
+.services {
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    /* Center the inner content */
+}
