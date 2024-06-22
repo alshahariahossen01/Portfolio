@@ -2,6 +2,8 @@
 # My Professional Portfolio
 
 Welcome to my professional portfolio! This repository contains the source code and assets for my personal portfolio website. It’s a showcase of my skills, projects, and experience in web development.
+![Screenshot (28)](https://github.com/alshahariahossen01/Portfolio/assets/144457355/fdac5920-8309-4b25-b2b0-d109f9dc1479)
+
 
 ## Purpose
 
